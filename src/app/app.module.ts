@@ -12,6 +12,8 @@ import { PostComponent } from './containers/post/post.component';
 import {MaterialModule} from "./material.module";
 import {HttpClientModule} from "@angular/common/http";
 import {MatRadioModule} from "@angular/material/radio";
+import {HttpService} from "./services/http.service";
+import {ApiService} from "./services/api.service";
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import {MatRadioModule} from "@angular/material/radio";
     HttpClientModule,
     MatRadioModule
   ],
-  providers: [],
+  providers: [HttpService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
