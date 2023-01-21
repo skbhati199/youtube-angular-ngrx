@@ -6,7 +6,7 @@ import {catchError, throwError} from "rxjs";
   providedIn: 'root'
 })
 export class HttpService {
-  private baseUrl = "https://jsonplaceholder.typicode.com/"
+  private baseUrl = "https://jsonplaceholder.typicode.com"
 
 
   constructor(private http:HttpClient) { }

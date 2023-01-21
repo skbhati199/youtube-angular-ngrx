@@ -14,6 +14,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatRadioModule} from "@angular/material/radio";
 import {HttpService} from "./services/http.service";
 import {ApiService} from "./services/api.service";
+import {UserCardComponent} from "./containers/users/user-cart.component";
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ApiService} from "./services/api.service";
     HeaderComponent,
     YoutubeLayoutComponent,
     UsersComponent,
-    PostComponent
+    PostComponent,
+    UserCardComponent
   ],
   imports: [
     BrowserModule,
